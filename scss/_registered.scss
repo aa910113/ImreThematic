@@ -1,0 +1,50 @@
+.terms{
+    color: #B8817D;
+    padding: 0px;
+    border: 0px;
+}
+.terms:hover{
+    color: #B8817D;
+}
+.log_icon_number{
+    position: relative;
+    width: 99%;
+}
+.log_icon_number:before{
+    font-weight: 400;
+    content: "\f11c";
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 20px;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #545871;
+}
+.feedback{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .feedback_number{
+        position: absolute;
+        top: 31%;
+        right: -1%;
+        font-size: 12px;
+        background-color: #545871;
+        padding: 3px;
+        color: #F0F1F7;
+    }
+}
+.btn{
+    vertical-align: 0px;
+}
+.log_icon_number ::-webkit-input-placeholder{
+  color: #EBD0CE;
+}
+.log_icon_number ::-moz-placeholder{
+  color: #EBD0CE;
+}
+.log_icon_number :-ms-input-placeholder{
+  color: #EBD0CE;
+}
