@@ -35,16 +35,10 @@
         padding: 3px;
         color: #F0F1F7;
     }
+    .form-control{
+        text-indent: 25px;
+    }
 }
 .btn{
     vertical-align: 0px;
-}
-.log_icon_number ::-webkit-input-placeholder{
-  color: #EBD0CE;
-}
-.log_icon_number ::-moz-placeholder{
-  color: #EBD0CE;
-}
-.log_icon_number :-ms-input-placeholder{
-  color: #EBD0CE;
 }

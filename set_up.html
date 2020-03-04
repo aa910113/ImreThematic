@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Imer</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/photo/圖標.png">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	  		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+	  		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	  <link rel="stylesheet"
+	  		href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+	  <link rel="stylesheet" href="/css/all.css">
+	</head>
+	</head>
+<body>
+	<div class="content">
+		<nav class="menu">
+			<div class="logo"></div>
+			<ul class="menu_icons">
+				<li>
+					<a href=""><i class="fas fa-campground"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-address-book"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-plus"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-cog"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-question"></i></a>
+				</li>
+			</ul>
+			<a href=""><i class="fas fa-sign-out-alt"></i></a>
+		</nav>
+		<section>
+			<form>
+				<div class="form-row edit_section">
+					<div class="col-md-4">
+						<div class="form-group">
+							<h3>店家名稱</h3>
+							<input type="text"" class=" form-control" id="name">
+						</div>
+						<div class="form-group">
+							<h3>店家電話</h3>
+							<input type="text"" class=" form-control" id="tel">
+						</div>
+						<div class="form-group">
+							<h3>行業類別</h3>
+							<select id="category" class="form-control">
+								<option selected>Choose...</option>
+								<option>...</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<h3>店家圖片</h3>
+						<ul class="imgs">
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+							<li class="image_item">
+								<div>
+									<label for="uploadImage" class="upload_btn">
+										<input accept="image/*" id="uploadImage" type="file">
+										<i class="fas fa-plus-circle"></i>
+									</label>
+									<img id="img" src="">
+								</div>
+								<span>封面圖片</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h3>店家地址</h3>
+				<div class="form-row edit_section">
+					<div class="form-group col-md-3">
+						<select id="city" class="form-control">
+							<option selected>縣市</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="form-group col-md-3">
+						<select id="area" class="form-control">
+							<option selected>鄉鎮市區</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="form-group col-md-5">
+						<label class="placeholder_color zxc">
+							<input type="text" class="form-control" placeholder="層樓、街/路....">
+						</label>
+					</div>
+				</div>
+				<div class="form_btn">
+					<button type="button" class="btn btn-outline-info">修改密碼</button>
+					<button type="button" class="btn btn-outline-info">儲存</button>
+				</div>
+			</form>
+		</section>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="/js/set_up.js"></script>
+</body>
+</html>

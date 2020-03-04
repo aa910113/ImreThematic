@@ -206,16 +206,13 @@ input[type=number]:focus,
   font-weight: 900; 
   content: "\f023";
 }
-.log_icon_email ::-webkit-input-placeholder, 
-.log_icon_pwd ::-webkit-input-placeholder {
+.placeholder_color ::-webkit-input-placeholder {
   color: #EBD0CE;
 }
-.log_icon_email ::-moz-placeholder, 
-.log_icon_pwd ::-moz-placeholder {
+.placeholder_color ::-moz-placeholder{
   color: #EBD0CE;
 }
-.log_icon_email :-ms-input-placeholder, 
-.log_icon_pwd :-ms-input-placeholder {
+.placeholder_color :-ms-input-placeholder{
   color: #EBD0CE;
 }
 .form-control{

@@ -273,18 +273,15 @@ input[type=number]:focus,
   content: "\f023";
 }
 
-.log_icon_email ::-webkit-input-placeholder,
-.log_icon_pwd ::-webkit-input-placeholder {
+.placeholder_color ::-webkit-input-placeholder {
   color: #EBD0CE;
 }
 
-.log_icon_email ::-moz-placeholder,
-.log_icon_pwd ::-moz-placeholder {
+.placeholder_color ::-moz-placeholder {
   color: #EBD0CE;
 }
 
-.log_icon_email :-ms-input-placeholder,
-.log_icon_pwd :-ms-input-placeholder {
+.placeholder_color :-ms-input-placeholder {
   color: #EBD0CE;
 }
 
@@ -429,20 +426,12 @@ input[type=number]:focus,
   color: #F0F1F7;
 }
 
+.feedback .form-control {
+  text-indent: 25px;
+}
+
 .btn {
   vertical-align: 0px;
-}
-
-.log_icon_number ::-webkit-input-placeholder {
-  color: #EBD0CE;
-}
-
-.log_icon_number ::-moz-placeholder {
-  color: #EBD0CE;
-}
-
-.log_icon_number :-ms-input-placeholder {
-  color: #EBD0CE;
 }
 
 body {
@@ -499,7 +488,11 @@ body {
 .content section {
   height: 100%;
   width: 90%;
-  padding: 10% 10%;
+  padding: 8% 20% 0 20%;
+}
+
+.content h3 {
+  color: #9597A6;
 }
 
 .menu_icons {
@@ -553,5 +546,93 @@ body {
           align-items: center;
   text-decoration: none;
   border-radius: 10px;
+}
+
+.edit_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.imgs .image_item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 115px;
+      flex: 0 0 115px;
+  width: 115px;
+  max-width: 115px;
+  min-height: 115px;
+  margin: 0 6.66px 20px;
+  position: relative;
+}
+
+.imgs img {
+  width: 100px;
+  height: 100px;
+}
+
+#uploadImage {
+  display: none;
+}
+
+.fa-plus-circle {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 43%;
+}
+
+.zxc {
+  width: 100%;
+}
+
+.form_btn {
+  margin-top: 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-outline-info {
+  color: #545871;
+  border-color: #545871;
+}
+
+.btn-outline-info:hover {
+  background-color: #545871;
+  border-color: #545871;
+  color: white;
+}
+
+.btn-outline-info:active {
+  background-color: #545871;
+  border-color: #545871;
+  color: white;
+}
+
+.btn-outline-info:focus {
+  background-color: #545871;
+  border-color: #545871;
+  color: white;
+}
+
+.btn-outline-info:visited {
+  background-color: #545871;
+  border-color: #545871;
+  color: white;
 }
 /*# sourceMappingURL=all.css.map */

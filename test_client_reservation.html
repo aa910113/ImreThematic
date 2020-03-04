@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    姓名：<input class="ordername" type="text" name="ordername"><br>
+    性別：<select class="gender" name="gender">
+      　<option>先生</option>
+      　<option>女士</option>
+    </select><br>
+    E-mail：<input class="orderemail" type="text" name="orderemail"><br>
+    手機：<input class="orderphone" type="text" name="orderphone"><br>
+    人數：<br>
+    <input class="orderpeople" type="radio"" name="2-3人"> 2-3人<br>
+    <input class="orderpeople" type="radio" name="4-5人"> 4-5人<br>
+    <input class="orderpeople" type="radio" name="5-6人"> 5-6人<br>
+    時段：<br>
+    <input class="booktime" type="radio" name="01:00"> 01:00<br>
+    <input class="booktime" type="radio" name="03:00"> 03:00<br>
+    <input class="booktime" type="radio" name="05:00"> 05:00<br>
+    備註：<textarea class="note" name="note"></textarea><br>
+    <input class="btn" type="button" value="送出">
+  </form>
+  <script>
+    var Num = 0;
+    var btn = document.querySelector(".btn").addEventListener("click",function(){
+      var ordertime = new Date();
+      var ordername = document.querySelector(".ordername").value;
+      var gender = document.querySelector(".gender").value;
+      var orderemail = document.querySelector(".orderemail").value;
+      var orderphone = document.querySelector(".orderphone").value;
+      var orderpeople = document.querySelectorAll(".orderpeople");
+      var booktime = document.querySelectorAll(".booktime");
+      var number = Num+=1;
+      var note = document.querySelector(".note").value;
+      var newOrderpeople;
+      var newBooktime;
+
+      orderpeople.forEach(function(item){
+        if(item.checked===true){
+          newOrderpeople = item.name
+        }
+      });
+      booktime.forEach(function (item) {
+        if (item.checked === true) {
+          newBooktime = item.name
+        }
+      });
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      var raw = JSON.stringify(
+        {
+          "ordertime": ordertime,
+          "ordername": ordername,
+          "gender": gender,
+          "orderemail": orderemail,
+          "orderphone": orderphone,
+          "orderpeople": newOrderpeople,
+          "booktime": newBooktime,
+          "number": number,
+          "note": note
+        });
+        var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+
+      fetch("http://localhost:3000/orders", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+    })
+
+
+      
+  </script>
+</body>
+</html>
