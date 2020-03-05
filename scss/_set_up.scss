@@ -10,6 +10,8 @@ body{
     background-color: #545871;
     height: 100%;
     width: 5%;
+    max-width: 72px;
+    min-width: 63px;
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
     display: flex;

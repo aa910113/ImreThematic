@@ -1,0 +1,23 @@
+.content{
+  .modify_pwd_content{
+    padding: 8% 30% 0 35%;
+  }
+}
+.modify_pwd_feedback_number{
+  display: flex;
+  position: relative;
+  .enter_feedback_number{
+    width: 98%;
+  }
+}
+.pwd_feedback_number{
+  background-color: #545871;
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  color:#F7ECEB;
+}
+.pwd_feedback_number:hover{
+  background-color: #7a81a8;
+  color:#F7ECEB;
+}

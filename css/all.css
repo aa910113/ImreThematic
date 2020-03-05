@@ -418,7 +418,7 @@ input[type=number]:focus,
 
 .feedback .feedback_number {
   position: absolute;
-  top: 31%;
+  top: 32%;
   right: -1%;
   font-size: 12px;
   background-color: #545871;
@@ -452,6 +452,8 @@ body {
   background-color: #545871;
   height: 100%;
   width: 5%;
+  max-width: 72px;
+  min-width: 63px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   display: -webkit-box;
@@ -634,5 +636,33 @@ body {
   background-color: #545871;
   border-color: #545871;
   color: white;
+}
+
+.content .modify_pwd_content {
+  padding: 8% 30% 0 35%;
+}
+
+.modify_pwd_feedback_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.modify_pwd_feedback_number .enter_feedback_number {
+  width: 98%;
+}
+
+.pwd_feedback_number {
+  background-color: #545871;
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  color: #F7ECEB;
+}
+
+.pwd_feedback_number:hover {
+  background-color: #7a81a8;
+  color: #F7ECEB;
 }
 /*# sourceMappingURL=all.css.map */
