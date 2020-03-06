@@ -963,4 +963,36 @@ body {
   transition: 0.5s;
   color: #9597A6;
 }
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #F7ECEB;
+}
+
+.name_week {
+  background-color: red;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+
+.operating_hours {
+  background-color: green;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+}
+
+.back_store_btn {
+  background-color: greenyellow;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+
+.back_store_btn button {
+  width: 10%;
+  height: 30px;
+}
 /*# sourceMappingURL=all.css.map */
