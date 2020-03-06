@@ -39,8 +39,8 @@
   //     .then(result => console.log(result))
   //     .catch(error => console.log('error', error));
   // })
-  const cors = 'https://cors-anywhere.herokuapp.com/'; // use cors-anywhere to fetch api data
-  const url = 'http://imrebooksystem.southeastasia.cloudapp.azure.com/Home/Shit'; // origin api url
+  // const cors = 'https://cors-anywhere.herokuapp.com/'; // use cors-anywhere to fetch api data
+  // const url = 'http://imrebooksystem.southeastasia.cloudapp.azure.com/Home/Shit'; // origin api url
 
     /** fetch api url by cors-anywhere */
     // axios.post(`${cors}${url}`, { "Email": "bbb@gmail.com" })
@@ -52,20 +52,31 @@
       //   }
       // );
       
-  var app = new Vue({
-      el: '#app',
-      data: {},
-      methods: {
-        sendEmail() {
-          axios.post(`${cors}${url}`, { "Email": "吳大帥 一點也不帥" })
-          .then((res) => { console.table(res.data) })
-          .catch((error) => { console.error(error) })
-          // axios.post('http://imrebooksystem.southeastasia.cloudapp.azure.com/Home/Shit', { "Email": "bbb@gmail.com" })
-        }
-      }
-    });
+  // var app = new Vue({
+  //     el: '#app',
+  //     data: {},
+  //     methods: {
+  //       sendEmail() {
+  //         axios.post(`${cors}${url}`, { "Email": "吳大帥 一點也不帥" })
+  //         .then((res) => { console.table(res.data) })
+  //         .catch((error) => { console.error(error) })
+  //         // axios.post('http://imrebooksystem.southeastasia.cloudapp.azure.com/Home/Shit', { "Email": "bbb@gmail.com" })
+  //       }
+  //     }
+  //   });
 </script>
+<input type="password" name="np" id="np" class="content_text" />
+<input type="button" value="send" onclick="btclick()" />
 
+Javascript
+
+<script type="text/javascript">
+  function btclick() {
+    if (!((document.getElementById("np").value).match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30}$/))) {
+      alert("your password : " + document.getElementById("np").value);
+    }
+  }
+</script>
 
 
 </body>

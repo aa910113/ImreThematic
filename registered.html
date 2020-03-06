@@ -20,9 +20,9 @@
     <div class="log_body row">
       <img class="side_img col" src="/photo/photo-1518145337186-67f23bd7dd5f.jfif" alt="...">
       <div class="side_content">
-        <div class="side_group col">
+        <div class="side_group col" id="app">
           <img class="log_logo" src="/photo/未命名-1.png" alt="logo">
-          <div class="feedback" id="app">
+          <div class="feedback">
             <label class="log_icon_email placeholder_color">
               <input type="email" class="form-control" placeholder="Enter email" v-model="Email">
             </label>
@@ -30,7 +30,7 @@
               <input type="password" class="form-control" placeholder="Password" v-model="Password">
             </label>
             <label class="log_icon_pwd placeholder_color">
-              <input type="password" class="form-control" placeholder="Password again">
+              <input type="password" class="form-control" placeholder="Password again" v-model="PasswordAgain">
             </label>
             <div>
               <label class="log_icon_number placeholder_color">
@@ -39,13 +39,13 @@
               </label>
               <div class="logoin_option">
                   <div class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing" @click="checked = !checked">
                     <label class="custom-control-label option_remember" for="customControlAutosizing">我同意<a href="#" class="btn btn-link terms">隱私政策</a></label>
                   </div>
                 </div>
             </div>
           </div>
-          <button type="button" class="btn btn-link log_btn">註冊</button>
+          <button type="button" class="btn btn-link log_btn" @click="registered">註冊</button>
         </div>
         <div class="base_btn">
           <span>已經是會員?<a href="/logoin.html" class="btn btn-link">登入</a></span>
