@@ -963,4 +963,225 @@ body {
   transition: 0.5s;
   color: #9597A6;
 }
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 1.5% 1.5% 0 5%;
+  background-color: #F7ECEB;
+}
+
+.period_week,
+.operating_hours,
+.back_store_btn {
+  width: 100%;
+  margin: 0;
+}
+
+.period_week {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.operating_hours {
+  height: 78%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5% 0 0.7%;
+  position: relative;
+}
+
+.back_store_btn {
+  height: 5%;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+}
+
+.back_store_btn button {
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.period,
+.week {
+  background-color: #545871;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.period {
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.week {
+  margin-left: 1%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.period,
+.week {
+  color: #F0F1F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+}
+
+.role_work_week_bg {
+  margin-left: 1%;
+  right: 0px;
+  width: 82.3%;
+}
+
+.role_work_time_bg,
+.role_work_week_bg {
+  position: absolute;
+  background-color: #545871;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.role_work_period {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0.5%;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.role_work_period li {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.role_work_period::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.time_box {
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  color: #F0F1F7;
+  padding: 0 10px;
+}
+
+.time_box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #DADBE6;
+}
+
+.can_appointment {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 0;
+}
+
+.can_appointment li {
+  border-right: 1px solid #F0F1F7;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #DADBE6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 5px;
+}
+
+.can_appointment li label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.limit {
+  color: #DADBE6;
+}
+
+.limit input {
+  width: 40%;
+  height: 80%;
+  margin: 0 5px;
+  background-color: #545871;
+  color: #F0F1F7;
+  border: 1px solid #DADBE6;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+
+.can_appointment_btn {
+  color: #9597A6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.can_appointment_btn .fa-calendar-times {
+  font-size: 1.5rem;
+}
+
+.can_appointment_btn:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #DADBE6;
+  text-decoration: none;
+}
 /*# sourceMappingURL=all.css.map */
