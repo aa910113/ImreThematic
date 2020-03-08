@@ -1,0 +1,59 @@
+.blacklist_box{
+  height: 100%;
+  width: 100%;
+  padding: 2% 2% 0 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  ul{
+    width: 100%;
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+  }
+  ul::-webkit-scrollbar { width: 0 !important }
+}
+.card{
+  display: inline-block;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 15px;
+  border:2px solid #B8817D;
+  background-color: #F7ECEB;
+  color: #B8817D;
+  margin: 0.2rem;
+}
+.card-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40%;
+  .blacklist_name{
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+.card-body{
+  display: flex;
+  height: 50%;
+  padding: 1rem;
+  .blacklist_date{
+    margin-left: 6%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+      position: absolute;
+      right: -10px;
+      top: -3px;
+      color: red;
+    }
+    .year{
+      font-size: 1.5rem;
+      margin: 0;
+      height: 30px;
+    }
+  }
+}
