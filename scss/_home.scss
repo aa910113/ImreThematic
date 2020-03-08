@@ -1,0 +1,357 @@
+.menu{
+  z-index: 2;
+}
+.home_main{
+  width: 100%;
+  height: 100%;
+}
+.input_box{
+  background-color: #636780;
+  padding-left: 5.3%;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  ul{
+    height: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+}
+.add_title{
+  font-size: 2.5rem;
+  color: #9597A6;
+}
+.add_new_date{
+  color:#F0F1F7;
+  font-size: 1.5rem;
+  margin: 0;
+  span{
+    color: #E6DBDA;
+  }
+}
+.add_new_time{
+  font-size:5rem;
+  color: #E6DBDA;
+}
+.add_people{
+  display: flex;
+  height: 150px;
+  label{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #DADBE6;
+  }
+  input{
+    width: 73%;
+    height: 40%;
+    font-size: 3.5rem;
+    background-color: #636780;
+    border: none;
+    margin-left: 20px;
+  }
+  input:focus{
+    color: #DADBE6;
+  }
+}
+.add_data{
+  height: 63%;
+}
+.write_data{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  label,
+  .guest_note_box{
+    position: relative;
+    width: 100%;
+    height: 27%;
+    border-bottom: 2px solid #DADBE6;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    color: #DADBE6;
+  }
+  .appellative{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #9597A6;
+  }
+  .fa-mars:hover,
+  .fa-venus:hover{
+    transition: 1s;
+    color: #F0F1F7;
+  }
+  .note_box,
+  .guest_note_box{
+    height: 100px;
+    display: flex;
+  }
+  .phone,
+  .first_name,
+  .note{
+    height: 100%;
+    background-color: #636780;
+    border: none;
+    color: #DADBE6;
+  }
+  .phone{
+    width: 80%;
+    margin-left: 5px;
+  }
+  .first_name{
+    width: 50%;
+    height: 90%;
+    margin-left: 5px;
+  }
+  .note{
+    width: 90%;
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+  .guest_note{
+    height: 100%;
+    width: 90%;
+    font-size: 1rem;
+    overflow-y: auto;
+    word-break: break-all;
+  }
+}
+.preview_box{
+  padding: 1.5% 2%;
+  .preview_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.immediate_number{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: #9597A6;
+  font-size: 1.5rem;
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      margin: 0;
+    }
+  }
+}
+.preview_header_btn{
+  height: 50px;
+  button{
+    background-color: #E6DBDA;
+    color: #9597A6;
+    border: none;
+  }
+  button:hover{
+    background-color: #EBD0CE;
+  }
+  button:focus{
+    background-color: #EBD0CE;
+  }
+  .btn-secondary:first-child:active{
+    background-color: rgb(236, 189, 186);
+  }
+}
+.search_box{
+  height: 5%;
+  width: 25%;
+  position: relative;
+  i{
+    position: absolute;
+    top: 11px;
+    font-size: 1.6rem;
+    color: #EBD0CE;
+  }
+  .fa-search{
+    left: 5px;
+  }
+  .fa-times-circle{
+    right: 15px;
+  }
+  input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    text-indent: 35px;
+  }
+}
+.preview_content{
+  padding-top: 2%;
+  color: #B8817D;
+  font-size: 1.5rem;
+  height: 760px;
+  overflow-y: scroll;
+}
+.preview_content::-webkit-scrollbar{ width: 0 !important }
+.preview_tbody{
+  // height: 768px;
+  // display: block;
+  // overflow-y: scroll;
+  //需再研究 不然就別用table
+  tr{
+    height: 110px;
+    border-top: 1px solid #dee2e6;
+    th{
+      height: 110px;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      border: none;
+    }
+    td{
+      border: none;
+    }
+    .reservation_time{
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #B8817D;
+    }
+  }
+}
+.guest_name{
+  font-size: 2rem;
+  margin: 0;
+  span{
+    font-size: 1rem;
+  }
+}
+.guest_phone{
+  margin: 0;
+}
+.reservation_people{
+  display: flex;
+  .adult{
+    font-size: 3rem;
+  }
+  .child, .baby{
+    margin-top: 10px;
+  }
+  p{
+    margin: 0;
+  }
+}
+.reservation_time{
+  font-size:2rem;
+  color: #545871;
+}
+.reservation_status{
+  font-size: 2.5rem;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.guest_data{
+  padding-left: 5.3%;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  ul{
+    height: 90%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+}
+.guest_title{
+  font-size: 2.5rem;
+  color: #B8817D;
+}
+.reservation_date{
+  color:#B8817D;
+  font-size: 1.5rem;
+  margin: 0;
+  span{
+    color: #545871;
+  }
+}
+.personal_data{
+  display: flex;
+  width: 70%;
+  height: 25%;
+  justify-content: space-between;
+  align-items: center;
+  color: #B8817D;
+  .personal_number{
+    font-size: 3rem;
+  }
+  .personal_message_name{
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+.guest_people{
+  display: flex;
+  height: 150px;
+  div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #B8817D;
+    p{
+      font-size: 3rem;
+    }
+  }
+}
+.guest_data_content{
+  height: 63%;
+}
+.guest_message{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  label,
+  .guest_note_box{
+    position: relative;
+    width: 100%;
+    height: 27%;
+    border-bottom: 2px solid #B8817D;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    color: #B8817D;
+  }
+  .note_box,
+  .guest_note_box{
+    height: 100px;
+    display: flex;
+  }
+  .note{
+    height: 100%;
+    background-color: #F7ECEB;
+    border: none;
+    color: #B8817D;
+    width: 90%;
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+  .guest_note{
+    height: 100%;
+    width: 90%;
+    font-size: 1rem;
+    overflow-y: auto;
+    word-break: break-all;
+  }
+}
