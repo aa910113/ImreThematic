@@ -35,3 +35,26 @@ var temporaryPwd = new Vue({
     }
   }
 })
+var logoin = new Vue({
+  el:"#logoin",
+  data:{
+    Email:"",
+    pwd:"",
+    remember:false,
+    message:""
+  },
+  methods:{
+    log(){
+      const url = "http://imrebooksystem.southeastasia.cloudapp.azure.com/BusinessUsers/Login";
+      axios.post(`${url}`, { 
+        "Email": this.Email, 
+        "Password": this.pwd
+      })
+        .then((res) => { 
+          this.message = res.data
+          // console.table(res.data) 
+        })
+        .catch((error) => { console.error(error) })
+    }
+  }
+})

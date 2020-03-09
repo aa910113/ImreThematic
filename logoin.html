@@ -18,21 +18,22 @@
     <div class="log_body row">
       <img class="side_img col" src="/photo/photo-1518145337186-67f23bd7dd5f.jfif" alt="...">
       <div class="side_content">
-        <div class="side_group col">
+        <div class="side_group col" id="logoin">
           <img class="log_logo" src="/photo/未命名-1.png" alt="logo">
           <div class="log_feedback">
+            <span class="log_error">{{ message }}</span>
             <label class="log_icon_email placeholder_color">
-              <input type="email" class="form-control" placeholder="Enter email">
+              <input type="email" class="form-control" placeholder="Enter email" v-model="Email">
             </label>
             <div>
               <label class="log_icon_pwd placeholder_color">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" placeholder="Password" v-model="pwd">
               </label>
               <ul class="logoin_option">
                 <li>
                   <div class="custom-control custom-checkbox mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                    <label class="custom-control-label option_remember" for="customControlAutosizing">記住我</label>
+                    <label class="custom-control-label option_remember" for="customControlAutosizing" @click="remember = !remember">記住我</label>
                   </div>
                 </li>
                 <li>
@@ -41,7 +42,7 @@
               </ul>
             </div>
           </div>
-          <button type="button" class="btn btn-link log_btn" >登入</button>
+          <button type="button" class="btn btn-link log_btn" @click="log">登入</button>
         </div>
         <div class="base_btn">
           <span>還不是會員?<a href="/registered.html" class="btn btn-link">註冊</a></span>

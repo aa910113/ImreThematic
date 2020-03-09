@@ -231,7 +231,7 @@ input[type=number]:focus,
 }
 
 .log_feedback {
-  height: 25%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,10 +242,18 @@ input[type=number]:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .log_feedback .form-control {
   text-indent: 25px;
+}
+
+.log_feedback .log_error {
+  color: red;
+  font-size: 1.5rem;
 }
 
 .log_icon_email, .log_icon_pwd {
@@ -1003,7 +1011,6 @@ body {
 .main {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   padding: 1.5% 1.5% 0 5%;
   background-color: #F7ECEB;
 }
@@ -1843,34 +1850,6 @@ body {
 .card-body .blacklist_date .year {
   font-size: 1.5rem;
   margin: 0;
-=======
-  background-color: #F7ECEB;
-}
-
-.name_week {
-  background-color: red;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-}
-
-.operating_hours {
-  background-color: green;
-  width: 100%;
-  height: 50%;
-  margin: 0;
-}
-
-.back_store_btn {
-  background-color: greenyellow;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-}
-
-.back_store_btn button {
-  width: 10%;
->>>>>>> back-api-test
   height: 30px;
 }
 /*# sourceMappingURL=all.css.map */

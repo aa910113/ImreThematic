@@ -178,12 +178,17 @@ input[type=number]:focus,
     }
 }
 .log_feedback{
-    height: 25%;
+    height: 30%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
     .form-control{
         text-indent: 25px;
+    }
+    .log_error{
+        color: red;
+        font-size: 1.5rem;
     }
 }
 .log_icon_email, .log_icon_pwd{

@@ -1,7 +1,162 @@
+// .main{
+//   width: 100%;
+//   height: 100%;
+//   padding:1.5% 1.5% 0 5%;
+//   background-color: #F7ECEB;
+// }
+// .period_week,
+// .operating_hours,
+// .back_store_btn{
+//   width: 100%;
+//   margin: 0;
+// }
+// .period_week{
+//   // background-color: red;
+//   width: 100%;
+//   height: 10%;
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .operating_hours{
+//   height: 78%;
+//   display: flex;
+//   margin: 1.5% 0 0.7%;
+//   position: relative;
+// }
+// .back_store_btn{
+//   height: 5%;
+//   width: 15%;
+//   display: flex;
+//   justify-content: space-between;
+//   margin-left: auto;
+//   button{
+//     width: 45%;
+//     height: 100%;
+//     border-radius: 10px;
+//   }
+// }
+// .period,
+// .week{
+//   background-color: #545871;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 15px;
+// }
+// .period{
+//   margin: 0;
+//   justify-content: center;
+// }
+// .week{
+//   margin-left: 1%;
+//   justify-content: space-around;
+//   list-style: none;
+// }
+// .period,
+// .week{
+//   color: #F0F1F7;
+//   display: flex;
+//   align-items: center;
+//   font-size: 3rem;
+// }
+// .role_work_week_bg{
+//   margin-left: 1%;
+//   right: 0px;
+//   width: 82.3%;
+// }
+// .role_work_time_bg,
+// .role_work_week_bg{
+//   position: absolute;
+//   background-color: #545871;
+//   border-radius: 15px;
+//   height: 100%;
+// }
+// .role_work_period{
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0.5%;
+//   z-index: 1;
+//   overflow-y: auto;
+//   li{
+//     width: 100%;
+//     height: 100px;
+//     margin-bottom: 5px;
+//   }
+// }
+// .role_work_period::-webkit-scrollbar{ width: 0 !important }
+// .time_box{
+//   font-size: 2rem;
+//   width: 100%;
+//   height: 100%;
+//   color: #F0F1F7;
+//   padding: 0 10px;
+//   span{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+//     width: 100%;
+//     border-bottom: 2px solid #DADBE6;
+//   }
+// }
+// .can_appointment{
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-right: 0;
+//   li{
+//     border-right: 1px solid #F0F1F7;
+//     width: 100%;
+//     height: 100%;
+//     border-bottom: 2px solid #DADBE6;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     padding: 0 5px;
+//     label{
+//       width: 100%;
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+// }
+// .limit{
+//   color: #DADBE6;
+//   input{
+//     width: 40%;
+//     height: 80%;
+//     margin: 0 5px;
+//     background-color: #545871;
+//     color: #F0F1F7;
+//     border: 1px solid #DADBE6;
+//     border-radius: 10px;
+//     text-indent: 15px;
+//   }
+// }
+// .can_appointment_btn{
+//   color: #9597A6;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   .fa-calendar-times{
+//     font-size: 1.5rem;
+//   }
+// }
+// .can_appointment_btn:hover{
+//   transition: 1s;
+//   color: #DADBE6;
+//   text-decoration:none;
+// }
+
+
+
+
+
 .main{
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   padding:1.5% 1.5% 0 5%;
   background-color: #F7ECEB;
 }
@@ -149,29 +304,4 @@
   transition: 1s;
   color: #DADBE6;
   text-decoration:none;
-=======
-  background-color: #F7ECEB;
-}
-.name_week{
-  background-color: red;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-}
-.operating_hours{
-  background-color: green;
-  width: 100%;
-  height: 50%;
-  margin: 0;
-}
-.back_store_btn{
-  background-color: greenyellow;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-  button{
-    width: 10%;
-    height: 30px;
-  }
->>>>>>> back-api-test
 }
