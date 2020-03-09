@@ -9,7 +9,7 @@ var app = new Vue({
   },
   methods:{
     sendEmail(){
-      const cors = "https://cors-anywhere.herokuapp.com/"; 
+      // const cors = "https://cors-anywhere.herokuapp.com/"; 
       const url = "http://imrebooksystem.southeastasia.cloudapp.azure.com/businessUsers/VerificationMailSend";
       if (this.Email === '') {
         alert("請填寫E-mail");
@@ -19,17 +19,17 @@ var app = new Vue({
           alert("請输入有效的E-mail");
         } else {
           // bbb@gmail.com
-          axios.post(`${cors}${url}`, { "Email": this.Email })
+          axios.post(`${url}`, { "Email": this.Email })
             .then((res) => { 
               localStorage.setItem("Verification code", res.data)
-              // console.table(res.data) 
+              console.table(res.data) 
             })
             .catch((error) => { console.error(error) })
         }
       }
     },
     registered(){
-      const cors = "https://cors-anywhere.herokuapp.com/";
+      // const cors = "https://cors-anywhere.herokuapp.com/";
       const url = "http://imrebooksystem.southeastasia.cloudapp.azure.com/BusinessUsers/create";
       if (this.Email === '') {
         alert("請填寫E-mail");
@@ -48,16 +48,20 @@ var app = new Vue({
             if (this.checked===false){
               alert("請勾選我同意")
             }else{
+              if (this.Verification !== localStorage.getItem("Verification code")){
+                alert("驗證碼不正確")
+              }else{
+                // console.log(localStorage.getItem("Verification code"))
+                axios.post(`${url}`, {
+                  "Email": this.Email,
+                  "Password": this.Password,
+                  "Verification": this.Verification
+                })
+                  .then((res) => { console.table(res.data) })
+                  .catch((error) => { console.error(error) })
+              }
               // localStorage.getItem("name")
-              console.log(localStorage.getItem("Verification code"))
               // console.log(this.Password.length)
-              // axios.post(`${cors}${url}`, {
-              //   "Email": "bbb@gmail.com",
-              //   "Password": "bbbb",
-              //   "Verification": "4099"
-              // })
-              //   .then((res) => { console.table(res.data) })
-              //   .catch((error) => { console.error(error) })
             }
           }
         }
