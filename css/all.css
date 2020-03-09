@@ -374,6 +374,42 @@ input[type=number]:focus,
   color: #B8817D;
 }
 
+.modal-content {
+  background-color: #F7ECEB;
+  color: #B8817D;
+}
+
+#recipient-name {
+  color: #B8817D;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #F7ECEB;
+  border: 1px solid #B8817D;
+  color: #B8817D;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #686D8D;
+  border: none;
+  color: #F7ECEB;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.form-group span {
+  margin-left: 5%;
+  color: red;
+  font-size: 0.5rem;
+}
+
 .terms {
   color: #B8817D;
   padding: 0px;
@@ -967,6 +1003,7 @@ body {
 .main {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   padding: 1.5% 1.5% 0 5%;
   background-color: #F7ECEB;
 }
@@ -1806,6 +1843,34 @@ body {
 .card-body .blacklist_date .year {
   font-size: 1.5rem;
   margin: 0;
+=======
+  background-color: #F7ECEB;
+}
+
+.name_week {
+  background-color: red;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+
+.operating_hours {
+  background-color: green;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+}
+
+.back_store_btn {
+  background-color: greenyellow;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+
+.back_store_btn button {
+  width: 10%;
+>>>>>>> back-api-test
   height: 30px;
 }
 /*# sourceMappingURL=all.css.map */
